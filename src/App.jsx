@@ -1,5 +1,8 @@
 import { useState, useRef, useEffect } from "react"
 import lottie from "lottie-web"
+// import rainbow from "./assets/rainbow.json"
+// import rocket from "./assets/rocket.json"
+// import sun from "./assets/sun.json"
 
 const colors = ["red", "blue", "green", "black", "white", "purple"]
 const footerColors = ["red", "blue", "yellow", "black", "white", "purple"]
@@ -44,7 +47,7 @@ function App() {
           renderer: "svg",
           loop: true,
           autoplay: true,
-          path: `https://wxa.wxs.qq.com/wxad-design/cpy/rainbow.json`,
+          path: 'https://raw.githubusercontent.com/jiangyijie27/cicinn.us/master/src/assets/rainbow.json',
         })
       })
     }
@@ -57,7 +60,7 @@ function App() {
           renderer: "svg",
           loop: true,
           autoplay: true,
-          path: `https://wxa.wxs.qq.com/wxad-design/cpy/rocket.json`,
+          path: 'https://raw.githubusercontent.com/jiangyijie27/cicinn.us/master/src/assets/sun.json',
         })
       })
     }
@@ -135,8 +138,8 @@ function App() {
       <div className="footer">
         <div>
           <span className="footer-link">cicinn.us</span> is a diminutive site
-          made for celebrating the birthday of Cicinnus Cheng who's a friend
-          of mine.
+          made for celebrating the birthday of Cicinnus Cheng who's a friend of
+          mine.
         </div>
         <div>
           <span className="footer-link">cicinn.us</span> is designed &
