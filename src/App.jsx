@@ -60,7 +60,7 @@ function App() {
           renderer: "svg",
           loop: true,
           autoplay: true,
-          path: 'https://raw.githubusercontent.com/jiangyijie27/cicinn.us/master/src/assets/sun.json',
+          path: 'https://raw.githubusercontent.com/jiangyijie27/cicinn.us/master/src/assets/rocket.json',
         })
       })
     }
