@@ -7,6 +7,52 @@
   "resolved" "https://mirrors.tencent.com/npm/@esbuild%2fdarwin-arm64/-/darwin-arm64-0.16.17.tgz"
   "version" "0.16.17"
 
+"@react-spring/animated@~9.7.1":
+  "integrity" "sha512-EX5KAD9y7sD43TnLeTNG1MgUVpuRO1YaSJRPawHNRgUWYfILge3s85anny4S4eTJGpdp5OoFV2kx9fsfeo0qsw=="
+  "resolved" "https://mirrors.tencent.com/npm/@react-spring%2fanimated/-/animated-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
+
+"@react-spring/core@~9.7.1":
+  "integrity" "sha512-8K9/FaRn5VvMa24mbwYxwkALnAAyMRdmQXrARZLcBW2vxLJ6uw9Cy3d06Z8M12kEqF2bDlccaCSDsn2bSz+Q4A=="
+  "resolved" "https://mirrors.tencent.com/npm/@react-spring%2fcore/-/core-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/animated" "~9.7.1"
+    "@react-spring/rafz" "~9.7.1"
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
+
+"@react-spring/rafz@~9.7.1":
+  "integrity" "sha512-JSsrRfbEJvuE3w/uvU3mCTuWwpQcBXkwoW14lBgzK9XJhuxmscGo59AgJUpFkGOiGAVXFBGB+nEXtSinFsopgw=="
+  "resolved" "https://mirrors.tencent.com/npm/@react-spring%2frafz/-/rafz-9.7.1.tgz"
+  "version" "9.7.1"
+
+"@react-spring/shared@~9.7.1":
+  "integrity" "sha512-R2kZ+VOO6IBeIAYTIA3C1XZ0ZVg/dDP5FKtWaY8k5akMer9iqf5H9BU0jyt3Qtxn0qQY7whQdf6MTcWtKeaawg=="
+  "resolved" "https://mirrors.tencent.com/npm/@react-spring%2fshared/-/shared-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/rafz" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
+
+"@react-spring/types@~9.7.1":
+  "integrity" "sha512-yBcyfKUeZv9wf/ZFrQszvhSPuDx6Py6yMJzpMnS+zxcZmhXPeOCKZSHwqrUz1WxvuRckUhlgb7eNI/x5e1e8CA=="
+  "resolved" "https://mirrors.tencent.com/npm/@react-spring%2ftypes/-/types-9.7.1.tgz"
+  "version" "9.7.1"
+
+"@react-spring/web@^9.7.1":
+  "integrity" "sha512-6uUE5MyKqdrJnIJqlDN/AXf3i8PjOQzUuT26nkpsYxUGOk7c+vZVPcfrExLSoKzTb9kF0i66DcqzO5fXz/Z1AA=="
+  "resolved" "https://mirrors.tencent.com/npm/@react-spring%2fweb/-/web-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/animated" "~9.7.1"
+    "@react-spring/core" "~9.7.1"
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
+
 "@swc/core-darwin-arm64@1.3.32":
   "integrity" "sha512-o19bhlxuUgjUElm6i+QhXgZ0vD6BebiB/gQpK3en5aAwhOvinwr4sah3GqFXsQzz/prKVDuMkj9SW6F/Ug5hgg=="
   "resolved" "https://mirrors.tencent.com/npm/@swc%2fcore-darwin-arm64/-/core-darwin-arm64-1.3.32.tgz"
@@ -53,6 +99,18 @@
   "integrity" "sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew=="
   "resolved" "https://mirrors.tencent.com/npm/@types%2fscheduler/-/scheduler-0.16.2.tgz"
   "version" "0.16.2"
+
+"@use-gesture/core@10.2.24":
+  "integrity" "sha512-ZL7F9mgOn3Qlnp6QLI9jaOfcvqrx6JPE/BkdVSd8imveaFTm/a3udoO6f5Us/1XtqnL4347PsIiK6AtCvMHk2Q=="
+  "resolved" "https://mirrors.tencent.com/npm/@use-gesture%2fcore/-/core-10.2.24.tgz"
+  "version" "10.2.24"
+
+"@use-gesture/react@^10.2.24":
+  "integrity" "sha512-rAZ8Nnpu1g4eFzqCPlaq+TppJpMy0dTpYOQx5KpfoBF4P3aWnCqwj7eKxcmdIb1NJKpIJj50DPugUH4mq5cpBg=="
+  "resolved" "https://mirrors.tencent.com/npm/@use-gesture%2freact/-/react-10.2.24.tgz"
+  "version" "10.2.24"
+  dependencies:
+    "@use-gesture/core" "10.2.24"
 
 "@vitejs/plugin-react-swc@^3.0.0":
   "integrity" "sha512-3GQ2oruZO9j8dSHcI0MUeOZQBhjYyDQsF/pKY4Px+CJxn0M16OhgFeEzUjeuwci4zhhjoNIDE9aFNaV5GMQ09g=="
@@ -247,7 +305,7 @@
     "picocolors" "^1.0.0"
     "source-map-js" "^1.0.2"
 
-"react-dom@^18.2.0":
+"react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://mirrors.tencent.com/npm/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -255,7 +313,7 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
-"react@^18.2.0":
+"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0", "react@>= 16.8.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://mirrors.tencent.com/npm/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
