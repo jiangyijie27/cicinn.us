@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react"
+import JSConfetti from "js-confetti"
 import lottie from "lottie-web"
 import { useSpring, animated, to } from "@react-spring/web"
 import { useDrag } from "@use-gesture/react"
@@ -22,6 +23,7 @@ function App() {
   const intervalIndex = useRef(0)
   const lottie1Mounted = useRef(false)
   const lottie2Mounted = useRef(false)
+  const confetting = useRef(false)
   const carouselIndex = useRef(0)
   const [{ x: textX }] = useSpring(
     () => ({
@@ -114,7 +116,27 @@ function App() {
     }
   )
 
+  const handleScroll = () => {
+    if (
+      window.innerHeight + window.scrollY >= document.body.offsetHeight - 2 &&
+      !confetting.current
+    ) {
+      confetting.current = true
+      const jsConfetti = new JSConfetti()
+      jsConfetti.addConfetti({
+        emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🌸"],
+        confettiNumber: 40,
+      })
+
+      setTimeout(() => {
+        confetting.current = false
+      }, 1000)
+    }
+  }
+
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+
     const letters = [
       ...document.querySelectorAll("[data-role='header-letters']"),
     ].reverse()
@@ -147,7 +169,7 @@ function App() {
           renderer: "svg",
           loop: true,
           autoplay: true,
-          path: "https://raw.githubusercontent.com/jiangyijie27/cicinn.us/master/src/assets/rainbow.json",
+          path: "https://cicinn.us/assets/rainbow.json",
         })
       })
     }
@@ -160,7 +182,7 @@ function App() {
           renderer: "svg",
           loop: true,
           autoplay: true,
-          path: "https://raw.githubusercontent.com/jiangyijie27/cicinn.us/master/src/assets/rocket.json",
+          path: "https://cicinn.us/assets/rocket.json",
         })
       })
     }
@@ -221,7 +243,7 @@ function App() {
               <div key={o}>
                 <div>HAVE A</div>
                 <div className="lotties lottie-2" />
-                <div>SPECIAL DAY</div>
+                <div>JOYFUL DAY</div>
                 <section />
               </div>
             )
@@ -307,19 +329,20 @@ function App() {
       <div className="footer">
         <div>
           <span className="footer-link">cicinn.us</span> is a diminutive site
-          made for celebrating the birthday of Cicinnus Cheng who's a friend of
-          mine.
+          made for celebrating the birthday of Cicinnus Cheng who's an
+          intelligent, lovely and pretty girl, and most importantly a supportive
+          friend of mine.
         </div>
         <div>
           <span className="footer-link">cicinn.us</span> is designed &
           handcrafted by <span className="footer-aragakey">Aragakey</span> who
-          paid ¥53.95 for this domain name. And it will expire on January 31,
-          2024. If you need to renew it, you can contact me then.
+          paid ¥53.95 for this domain name. It'll expire on January 31, 2024. If
+          you need to renew it, you can contact me then.
         </div>
         <div>
-          <span className="footer-link">cicinn.us</span> is hosted on github. It
-          loads relatively slow, cuz it's free. If you want it to be faster,
-          you'll have to figure it out yourself (or pay me).
+          <span className="footer-link">cicinn.us</span> may load relatively
+          slowly, cuz it's hosted on github which is free. If you want it to be
+          faster, you'll have to figure it out yourself (or pay me).
         </div>
         <div>
           Or one day you want to turn it into your own personal site, you can

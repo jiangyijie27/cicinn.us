@@ -9,7 +9,34 @@
   <link rel="icon" type="image/png" href="https://wxa.wxs.qq.com/wxad-design/yijie/wxad-favicon.png" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no viewport-fit=cover" />
-  <title>cicinn.us</title>
+  <title></title>
+  <script>
+    function doIt() {
+      window.WeixinJSBridge.invoke("setBounceBackground", {
+        backgroundColor: "#FFDD00",
+        footerBounceColor: "#FFDD00",
+      })
+      window.WeixinJSBridge.invoke("setNavigationBarColor", {
+        wxcolor: {
+          light: "jjj",
+          dark: "jjj",
+        },
+        color: "jjj",
+      })
+
+      window.WeixinJSBridge.invoke("setNavigationBarButtons", {
+        left: {
+          hidden: true,
+        },
+        right: {
+          hidden: true,
+        },
+      })
+    }
+    void 0 === window.WeixinJSBridge
+      ? document.addEventListener("WeixinJSBridgeReady", doIt, !1)
+      : doIt();
+  </script>
 </head>
 
 <body ontouchstart="">
