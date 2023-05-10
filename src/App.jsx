@@ -330,8 +330,8 @@ function App() {
         <div>
           <span className="footer-link">cicinn.us</span> is a diminutive site
           made for celebrating the birthday of Cicinnus Cheng who's an
-          intelligent, lovely and pretty girl, and most importantly a supportive
-          friend of mine.
+          individual who possesses both inner and outer beauty, and most
+          importantly a supportive teammate and friend of mine.
         </div>
         <div>
           <span className="footer-link">cicinn.us</span> is designed &
@@ -348,7 +348,7 @@ function App() {
           Or one day you want to turn it into your own personal site, you can
           pay me as well.
         </div>
-        <div>Anyway, happy birthday to you Cicinnus. Hope you like it. 🫰🏻</div>
+        <div>Anyway, happy birthday to you Cicinnus. Hope you like it.</div>
 
         <section className="cake">
           <div className="velas">
