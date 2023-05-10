@@ -328,9 +328,9 @@ function App() {
       </div>
       <div className="footer">
         <div>
-          <span className="footer-link">cicinn.us</span> is a diminutive site
+          <span className="footer-link">cicinn.us</span> is a tiny page
           made for celebrating the birthday of Cicinnus Cheng who's an
-          individual who possesses both inner and outer beauty, and most
+          individual possesses both inner and outer beauty, and most
           importantly a supportive teammate and friend of mine.
         </div>
         <div>
