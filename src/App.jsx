@@ -329,7 +329,7 @@ function App() {
       <div className="footer">
         <div>
           <span className="footer-link">cicinn.us</span> is a tiny page made for
-          celebrating the birthday of Cicinnus Cheng who's an individual
+          celebrating the birthday of <span className="footer-aragakey">Cicinnus Cheng</span> who's an individual
           possesses both inner and outer beauty, and most importantly a
           supportive teammate and friend of mine.
         </div>
