@@ -10,6 +10,7 @@ import { useDrag } from "@use-gesture/react"
 const colors = ["red", "blue", "green", "black", "white", "purple"]
 const footerColors = ["red", "blue", "yellow", "black", "white", "purple"]
 const carouselImages = [
+  "https://wxa.wxs.qq.com/wxad-design/cpy/ccns.png",
   "https://wxa.wxs.qq.com/wxad-design/cpy/pic-0.jpg",
   "https://wxa.wxs.qq.com/wxad-design/cpy/pic-1.jpg",
   "https://wxa.wxs.qq.com/wxad-design/cpy/pic-2.jpg",
@@ -328,10 +329,10 @@ function App() {
       </div>
       <div className="footer">
         <div>
-          <span className="footer-link">cicinn.us</span> is a tiny page
-          made for celebrating the birthday of Cicinnus Cheng who's an
-          individual possesses both inner and outer beauty, and most
-          importantly a supportive teammate and friend of mine.
+          <span className="footer-link">cicinn.us</span> is a tiny page made for
+          celebrating the birthday of Cicinnus Cheng who's an individual
+          possesses both inner and outer beauty, and most importantly a
+          supportive teammate and friend of mine.
         </div>
         <div>
           <span className="footer-link">cicinn.us</span> is designed &
