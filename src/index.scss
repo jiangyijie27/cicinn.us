@@ -243,6 +243,8 @@ header {
   font-family: ApercuBold;
   font-size: 20px;
   line-height: 26px;
+  -webkit-user-select: text;
+  user-select: text;
 
   > div {
     margin-bottom: 24px;

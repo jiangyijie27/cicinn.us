@@ -19,7 +19,6 @@ const carouselImages = [
 ]
 
 function App() {
-  const [count, setCount] = useState(0)
   const intervalRef = useRef(0)
   const intervalIndex = useRef(0)
   const lottie1Mounted = useRef(false)
@@ -349,7 +348,7 @@ function App() {
           Or one day you want to turn it into your own personal site, you can
           pay me as well.
         </div>
-        <div>Anyway, happy birthday to you Cicinnus. Hope you like it.</div>
+        <div>Anyway, happy birthday to you <span className="footer-aragakey">Cicinnus</span>. Hope you like it (if you don't, I'll never talk to you for the rest of my life).</div>
 
         <section className="cake">
           <div className="velas">
