@@ -169,7 +169,7 @@ function App() {
           renderer: "svg",
           loop: true,
           autoplay: true,
-          path: "https://cicinn.us/assets/rainbow.json",
+          path: "https://cicinn.us/rainbow.json",
         })
       })
     }
@@ -182,7 +182,7 @@ function App() {
           renderer: "svg",
           loop: true,
           autoplay: true,
-          path: "https://cicinn.us/assets/rocket.json",
+          path: "https://cicinn.us/rocket.json",
         })
       })
     }
