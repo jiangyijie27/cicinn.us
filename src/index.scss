@@ -114,6 +114,11 @@ header {
   }
 }
 
+.App {
+  position: relative;
+  z-index: 1;
+}
+
 .block-g {
   background: var(--green);
   padding: 76px 0 0 30px;

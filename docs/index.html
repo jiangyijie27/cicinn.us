@@ -11,6 +11,34 @@
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no viewport-fit=cover" />
   <title></title>
   <script>
+    if (history.scrollRestoration) {
+      history.scrollRestoration = "manual";
+    }
+    // TODO: 分享样式
+    var wxshareUrl = "https://cicinn.us",
+      wxshareImg = "https://wxa.wxs.qq.com/wxad-design/cpy/ccns-share.png",
+      wxshareTitle = "cicinn.us",
+      momentShareTitle = "cicinn.us",
+      wxshareDesc = "happy birthday 2 cicinnus from aragakey.";
+
+    function getWxShareData() {
+      return {
+        img_url: wxshareImg,
+        title: wxshareTitle,
+        desc: wxshareDesc,
+        link: wxshareUrl
+      }
+    }
+
+    function getWxShareMomentData() {
+      return {
+        img_url: wxshareImg,
+        title: momentShareTitle,
+        desc: momentShareTitle,
+        link: wxshareUrl
+      }
+    }
+
     function doIt() {
       window.WeixinJSBridge.invoke("setBounceBackground", {
         backgroundColor: "#FFDD00",
@@ -23,6 +51,21 @@
         },
         color: "jjj",
       })
+
+      WeixinJSBridge.on("menu:share:appmessage", function () {
+        WeixinJSBridge.invoke(
+          "sendAppMessage",
+          getWxShareData(),
+          function (e) { }
+        );
+      });
+      WeixinJSBridge.on("menu:share:timeline", function () {
+        WeixinJSBridge.invoke(
+          "shareTimeline",
+          getWxShareMomentData(),
+          function (e) { }
+        );
+      });
 
       window.WeixinJSBridge.invoke("setNavigationBarButtons", {
         left: {
@@ -37,8 +80,8 @@
       ? document.addEventListener("WeixinJSBridgeReady", doIt, !1)
       : doIt();
   </script>
-  <script type="module" crossorigin src="./assets/index-6ff218bd.js"></script>
-  <link rel="stylesheet" href="./assets/index-518bcd43.css">
+  <script type="module" crossorigin src="./assets/index-add250d0.js"></script>
+  <link rel="stylesheet" href="./assets/index-a44915d4.css">
 </head>
 
 <body ontouchstart="">
