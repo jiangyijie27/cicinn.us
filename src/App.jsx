@@ -140,8 +140,11 @@ function App() {
       .includes("micromessenger")
 
     if (isWeChat && !window.location.href.includes("mp.weixin.qq.com")) {
-      window.location.href =
+      window.location.replace(
         "https://mp.weixin.qq.com/promotion/res/htmledition/ccns/index.html"
+      )
+    } else if (isWeChat && window.location.href.includes("mp.weixin.qq.com")) {
+      window.location.replace("https://cicinn.us")
     }
 
     window.addEventListener("scroll", handleScroll)
